@@ -7,7 +7,7 @@ var app = express();
 
 if (!token) {
     console.error("slack web api token is not set");
-    console.error("please `export wEB_SLACK_TOKEN`");
+    console.error("please `export WEB_SLACK_TOKEN`");
     process.exit(1);
 }
 var slack = new slackAPI({
@@ -17,7 +17,7 @@ var slack = new slackAPI({
 });
 
 app.get('/', function(request, response) {
-      response.send('Bot Running');
+      response.send('Bot is running');
 });
 
 var port = process.env.PORT || 5000;
