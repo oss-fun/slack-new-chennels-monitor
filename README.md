@@ -4,7 +4,7 @@
 
 * Notify you that a new channel in slack has been created.
 
-# Install
+# Install dependencies
 
 ```
 npm install
